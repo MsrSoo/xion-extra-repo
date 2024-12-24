@@ -1,0 +1,10 @@
+<pacman> [
+  (+)wget
+  (+)make
+  (+)gcc
+  (+)tar
+  (+)gzip
+  (+)bzip2
+]
+
++ = -S
