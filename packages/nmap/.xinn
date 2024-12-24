@@ -1,0 +1,12 @@
+<$cmd> echo -e "downloading tarball..." <$cmd>
+<$cmd> wget https://nmap.org/dist/nmap-7.95.tar.bz2 <$cmd>
+<$cmd> echo -e "decompressing tarball..."
+<$cmd> bzip2 -cd nmap-7.95.tar.bz2 | tar xvf - <$cmd>
+<$cmd> cd nmap-7.95 <$cmd>
+<$cmd> ./configure <$cmd>
+<$cmd> echo -e "compiling with make..." <$cmd>
+<$cmd> make <$cmd>
+<$cmd> echo -e "please enter your root password, not your user one" <$cmd>
+<$cmd> su root <$cmd>
+<$cmd> make install <$cmd>
+<$cmd> echo -e "Congratulations! Nmap is now installed as /usr/local/bin/nmap! Run it with no arguments for a quick help screen." <$cmd>
