@@ -1,0 +1,4 @@
+@define-repo
+
+<$name> extra
+<$description> extra repo for xion package manager
